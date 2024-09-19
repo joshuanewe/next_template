@@ -1,6 +1,7 @@
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
 import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
+import Navbar from "@/components/navbar"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -14,12 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             disableTransitionOnChange
           >
           <header>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
+            <Navbar />
           </header>
           <main>{children}</main>
           </ThemeProvider>

@@ -60,3 +60,29 @@
     --chart-5: 340 75% 55%;
   }
 }
+.navbar {
+  /* background-color: #f8f9fa; Optional: Add a background color */
+  padding: 1rem; /* Optional: Add some padding */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Space between links */
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
