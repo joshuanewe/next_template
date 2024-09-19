@@ -1,4 +1,4 @@
-
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <p>
         This is a template for a Next.js project with TypeScript, ESLint, Prettier, and Tailwind CSS.
       </p>
+      <Button>Click me</Button>
       
     </div>
   );
